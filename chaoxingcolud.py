@@ -5,7 +5,7 @@ import tkinter as tk
 import requests
 from PIL import Image, ImageTk
 import http.cookiejar
-import os
+#import os
 import sys
 
 
@@ -13,6 +13,8 @@ class chaoxingaccount:
     def __init__(self):
         self.sess = requests.session()
         self.loadcookie()
+        self.username = ''
+        self.password = ''
         r = self.sess.get('http://pan-yz.chaoxing.com')
         while r.url != 'http://pan-yz.chaoxing.com/':
             r = self.login()
@@ -32,10 +34,12 @@ class chaoxingaccount:
 
         # 用户名
         var_usr_name = tk.StringVar()
+        var_usr_name.set(self.username)
         entry_usr_name = tk.Entry(LoginWindow, textvariable=var_usr_name, font=('Arial', 14))
         entry_usr_name.place(x=120, y=10)
         # 用户密码
         var_usr_pwd = tk.StringVar()
+        var_usr_pwd.set(self.password)
         entry_usr_pwd = tk.Entry(LoginWindow, textvariable=var_usr_pwd, font=('Arial', 14), show='*')
         entry_usr_pwd.place(x=120, y=50)
         # 验证码
@@ -63,6 +67,8 @@ class chaoxingaccount:
                     'password': base64.b64encode(var_usr_pwd.get().encode()),
                     'numcode': var_code.get(),
                     'verCode': ''}
+            self.username = var_usr_name.get()
+            self.password = var_usr_pwd.get()
             LoginWindow.destroy()
 
         loginButton = tk.Button(LoginWindow, text='提交', command=submit)
@@ -71,18 +77,20 @@ class chaoxingaccount:
 
         r = self.sess.post('https://passport2.chaoxing.com/login?refer=http%3A%2F%2Fpan-yz.chaoxing.com%2F', data)
         # 实例化一个LWPcookiejar对象
-        new_cookie_jar = http.cookiejar.LWPCookieJar(sys.argv[0][:sys.argv[0].rfind('\\')+1]+'cookies.txt')
+        new_cookie_jar = http.cookiejar.LWPCookieJar(sys.argv[0][:sys.argv[0].rfind('\\') + 1] + 'cookies.txt')
         # 将转换成字典格式的RequestsCookieJar（这里我用字典推导手动转的）保存到LWPcookiejar中
         requests.utils.cookiejar_from_dict({c.name: c.value for c in self.sess.cookies}, new_cookie_jar)
         # 保存到本地文件
-        new_cookie_jar.save(sys.argv[0][:sys.argv[0].rfind('\\')+1]+'cookies.txt', ignore_discard=True, ignore_expires=True)
+        new_cookie_jar.save(sys.argv[0][:sys.argv[0].rfind('\\') + 1] + 'cookies.txt', ignore_discard=True,
+                            ignore_expires=True)
         return r
 
     def loadcookie(self):
         load_cookiejar = http.cookiejar.LWPCookieJar()
         # 从文件中加载cookies(LWP格式)
         try:
-            load_cookiejar.load(sys.argv[0][:sys.argv[0].rfind('\\')+1]+'cookies.txt', ignore_discard=True, ignore_expires=True)
+            load_cookiejar.load(sys.argv[0][:sys.argv[0].rfind('\\') + 1] + 'cookies.txt', ignore_discard=True,
+                                ignore_expires=True)
         except:
             return
 
@@ -150,9 +158,13 @@ if __name__ == '__main__':
         flid = nre.json()['data']['id']
     #teststr = ['0', r"D:\Pictures\1d5a072e7b76e3538d166ee867fc0c8007d5d964.png"]
     for file in sys.argv[1:]:
+        if file[0:3] == 'http':
+            print(file)
+            continue
         account1.uploadfile(flid, file)
         fi = account1.dirlist(flid).json()['list'][0]
-
-        print(r'http://pan-yz.chaoxing.com/download/downloadfile?fleid=' + fi['id'] + '&puid=' + str(fi['puid']))
-
-
+        rr = account1.sess.post(r'http://pan-yz.chaoxing.com/download/downloadfile',
+                                {'fleid': fi['id'], 'puid': str(fi['puid'])})
+        print(rr.url)
+        a = 0
+        # print(r'http://pan-yz.chaoxing.com/download/downloadfile?fleid=' + fi['id'] + '&puid=' + str(fi['puid']))
