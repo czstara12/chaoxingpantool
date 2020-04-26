@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc1f3735-8717-4a62-a644-43ac0933acf2" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chaoxingcolud.py" beforeDir="false" afterPath="$PROJECT_DIR$/chaoxingcolud.py" afterDir="false" />
     </list>
@@ -134,38 +133,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="524" y="114" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1585132655241" />
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1587300729495">
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1587860487026">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587300729495" />
-    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1587300729495">
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587860487026" />
+    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1587860487026">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587300729495" />
-    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1587300729495">
+    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587860487026" />
+    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1587860487026">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587300729495" />
-    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1587300729495">
+    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587860487026" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1587860487026">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587300729495" />
-    <state width="1515" height="210" key="GridCell.Tab.1.bottom" timestamp="1587300729495">
+    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587860487026" />
+    <state width="1515" height="210" key="GridCell.Tab.1.bottom" timestamp="1587860487026">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587300729495" />
-    <state width="1515" height="210" key="GridCell.Tab.1.center" timestamp="1587300729495">
+    <state width="1515" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587860487026" />
+    <state width="1515" height="210" key="GridCell.Tab.1.center" timestamp="1587860487026">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1587300729495" />
-    <state width="1515" height="210" key="GridCell.Tab.1.left" timestamp="1587300729495">
+    <state width="1515" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1587860487026" />
+    <state width="1515" height="210" key="GridCell.Tab.1.left" timestamp="1587860487026">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1587300729495" />
-    <state width="1515" height="210" key="GridCell.Tab.1.right" timestamp="1587300729495">
+    <state width="1515" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1587860487026" />
+    <state width="1515" height="210" key="GridCell.Tab.1.right" timestamp="1587860487026">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1587300729495" />
+    <state width="1515" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1587860487026" />
     <state x="270" y="54" key="SettingsEditor" timestamp="1584839447936">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -174,10 +173,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="775" height="419" key="XDebugger.FullValuePopup/0.0.1536.824@0.0.1536.824" timestamp="1586602064972" />
-    <state x="467" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1587299580185">
+    <state x="467" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1587859978028">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="467" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1587299580185" />
+    <state x="467" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1587859978028" />
     <state x="431" y="145" key="search.everywhere.popup" timestamp="1585043611701">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -188,7 +187,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/chaoxingcolud.py</url>
-          <line>168</line>
+          <line>169</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
@@ -205,6 +204,7 @@
         <watch expression="sess" />
         <watch expression="self" />
         <watch expression="entry_usr_pwd" />
+        <watch expression="rr.raw" />
       </configuration>
     </watches-manager>
   </component>

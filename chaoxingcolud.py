@@ -157,6 +157,7 @@ if __name__ == '__main__':
         nre = account1.newfolder()
         flid = nre.json()['data']['id']
     #teststr = ['0', r"D:\Pictures\1d5a072e7b76e3538d166ee867fc0c8007d5d964.png"]
+    #for file in teststr[1:]:
     for file in sys.argv[1:]:
         if file[0:3] == 'http':
             print(file)
@@ -164,7 +165,7 @@ if __name__ == '__main__':
         account1.uploadfile(flid, file)
         fi = account1.dirlist(flid).json()['list'][0]
         rr = account1.sess.post(r'http://pan-yz.chaoxing.com/download/downloadfile',
-                                {'fleid': fi['id'], 'puid': str(fi['puid'])})
-        print(rr.url)
-        a = 0
+                                {'fleid': fi['id'], 'puid': str(fi['puid'])}, allow_redirects=False)
+        print(rr.next.url)
+        #a = 0
         # print(r'http://pan-yz.chaoxing.com/download/downloadfile?fleid=' + fi['id'] + '&puid=' + str(fi['puid']))
